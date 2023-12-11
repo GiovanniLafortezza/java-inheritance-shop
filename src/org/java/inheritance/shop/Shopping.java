@@ -41,6 +41,12 @@ public class Shopping {
                 String memoryInput = scanner.nextLine();
                 Smartphone smartphone = new Smartphone(nameInput,descriptionInput,price,vat,memoryInput);
                 System.out.println(smartphone.toString());
+                System.out.println("Hai la carta fedeltà per un ulteriore sconto? (y/n)");
+                String answer = scanner.nextLine();
+                switch (answer){
+                    case "y":
+                        System.out.println(smartphone.getPriceSconted());
+                }
             } else if(category.equalsIgnoreCase("television")) {
                 System.out.print("Size: ");
                 int sizeInput = scanner.nextInt();
@@ -63,6 +69,8 @@ public class Shopping {
         } catch (IllegalArgumentException illegalArgumentException) {
             System.out.println("Sorry invalid parameters: " + illegalArgumentException.getMessage());
         }
+
+
 
 
 

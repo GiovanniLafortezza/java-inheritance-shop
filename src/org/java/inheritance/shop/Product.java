@@ -81,6 +81,14 @@ public class Product {
         BigDecimal vatOnPrice = price.multiply(vat);
         return price.add(vatOnPrice).setScale(2, RoundingMode.HALF_EVEN);
     }
+
+    public BigDecimal getPriceSconted(){
+        BigDecimal value2 = BigDecimal.valueOf(2);
+        BigDecimal value100 = BigDecimal.valueOf(100);
+        BigDecimal priceSconted = getFullPrice().multiply(value2);
+        priceSconted = priceSconted.divide(value100);
+        return getFullPrice().subtract(priceSconted);
+    }
     // metodo che restituisce il nome completo codice + nome
     public String getFullName(){
         return code + " " + name;
