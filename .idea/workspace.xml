@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dba33c30-c9a5-4a4f-8676-227939dcd6c4" name="Changes" comment="start project">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/java/inheritance/shop/Smartphone.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/java/inheritance/shop/Smartphone.java" afterDir="false" />
+    <list default="true" id="dba33c30-c9a5-4a4f-8676-227939dcd6c4" name="Changes" comment="create class Television">
+      <change beforePath="$PROJECT_DIR$/src/org/java/inheritance/shop/Headphones.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/java/inheritance/shop/Headphones.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,11 +57,29 @@
       <option name="project" value="LOCAL" />
       <updated>1702300931395</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="create class Smartphone">
+      <option name="closed" value="true" />
+      <created>1702303008771</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1702303008771</updated>
+    </task>
+    <task id="LOCAL-00003" summary="create class Television">
+      <option name="closed" value="true" />
+      <created>1702303318022</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1702303318022</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="start project" />
-    <option name="LAST_COMMIT_MESSAGE" value="start project" />
+    <MESSAGE value="create class Smartphone" />
+    <MESSAGE value="create class Television" />
+    <option name="LAST_COMMIT_MESSAGE" value="create class Television" />
   </component>
 </project>
