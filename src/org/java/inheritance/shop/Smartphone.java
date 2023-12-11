@@ -47,6 +47,19 @@ public class Smartphone extends Product {
     }
 
     @Override
+    public BigDecimal getPriceSconted() {
+        if (memory.equalsIgnoreCase("16")) {
+            BigDecimal value5 = BigDecimal.valueOf(5);
+            BigDecimal value100 = BigDecimal.valueOf(100);
+            BigDecimal priceSconted = getFullPrice().multiply(value5);
+            priceSconted = priceSconted.divide(value100);
+            return getFullPrice().subtract(priceSconted);
+        } else {
+            return super.getPriceSconted();
+        }
+    }
+
+    @Override
     public String toString() {
         return super.toString() + " Memory: " + getMemory() + " IMEI: " + getCodeImei();
     }

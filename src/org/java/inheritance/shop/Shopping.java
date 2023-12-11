@@ -46,6 +46,10 @@ public class Shopping {
                 switch (answer){
                     case "y":
                         System.out.println(smartphone.getPriceSconted());
+                        break;
+                    case "n":
+                        System.out.println("Va bene non applicheremo lo sconto");
+                        break;
                 }
             } else if(category.equalsIgnoreCase("television")) {
                 System.out.print("Size: ");

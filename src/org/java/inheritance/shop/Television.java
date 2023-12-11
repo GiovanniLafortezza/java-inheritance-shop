@@ -44,6 +44,18 @@ public class Television extends Product{
         }
     }
 
+    @Override
+    public BigDecimal getPriceSconted() {
+        if (smart) {
+            BigDecimal value10 = BigDecimal.valueOf(10);
+            BigDecimal value100 = BigDecimal.valueOf(100);
+            BigDecimal priceSconted = getFullPrice().multiply(value10);
+            priceSconted = priceSconted.divide(value100);
+            return getFullPrice().subtract(priceSconted);
+        } else {
+            return super.getPriceSconted();
+        }
+    }
 
     @Override
     public String toString() {
