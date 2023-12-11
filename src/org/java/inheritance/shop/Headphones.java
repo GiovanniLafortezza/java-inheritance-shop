@@ -42,6 +42,19 @@ public class Headphones extends Product{
         }
     }
 
+    @Override
+    public BigDecimal getPriceSconted() {
+        if (choice.equalsIgnoreCase("wired")){
+            BigDecimal value7 = BigDecimal.valueOf(7);
+            BigDecimal value100 = BigDecimal.valueOf(100);
+            BigDecimal priceSconted = getFullPrice().multiply(value7);
+            priceSconted = priceSconted.divide(value100);
+            return getFullPrice().subtract(priceSconted);
+        } else {
+            return super.getPriceSconted();
+        }
+
+    }
 
     @Override
     public String toString() {

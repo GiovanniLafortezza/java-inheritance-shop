@@ -58,6 +58,16 @@ public class Shopping {
                 boolean smartInput = scanner.nextBoolean();
                 Television television = new Television(nameInput,descriptionInput,price,vat,sizeInput,smartInput);
                 System.out.println(television.toString());
+                System.out.println("Hai la carta fedeltà per un ulteriore sconto? (y/n)");
+                String answer = scanner.nextLine();
+                switch (answer){
+                    case "y":
+                        System.out.println(television.getPriceSconted());
+                        break;
+                    case "n":
+                        System.out.println("Va bene non applicheremo lo sconto");
+                        break;
+                }
             } else if (category.equalsIgnoreCase("headphones")) {
                 System.out.print("Color: ");
                 String colorInput = scanner.nextLine();
@@ -65,6 +75,16 @@ public class Shopping {
                 String choiceInput = scanner.nextLine();
                 Headphones headphones = new Headphones(nameInput,descriptionInput,price,vat,colorInput,choiceInput);
                 System.out.println(headphones.toString());
+                System.out.println("Hai la carta fedeltà per un ulteriore sconto? (y/n)");
+                String answer = scanner.nextLine();
+                switch (answer){
+                    case "y":
+                        System.out.println(headphones.getPriceSconted());
+                        break;
+                    case "n":
+                        System.out.println("Va bene non applicheremo lo sconto");
+                        break;
+                }
             } else {
                 System.out.println("Sbagliato");
                 System.out.println("Selezionare una categoria tra quelle proposte");
