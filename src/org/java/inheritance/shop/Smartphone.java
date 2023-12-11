@@ -1,2 +1,4 @@
-package org.java.inheritance.shop;public class Smartphone {
+package org.java.inheritance.shop;
+
+public class Smartphone {
 }

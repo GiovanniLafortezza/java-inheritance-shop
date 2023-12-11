@@ -1,2 +1,4 @@
-package org.java.inheritance.shop;public class Headphones {
+package org.java.inheritance.shop;
+
+public class Headphones {
 }
