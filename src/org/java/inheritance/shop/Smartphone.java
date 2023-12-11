@@ -11,8 +11,8 @@ public class Smartphone extends Product {
     //COSTRUTTORI
 
 
-    public Smartphone(String name, String description, BigDecimal price, BigDecimal vat, Category category, String memory) throws IllegalArgumentException {
-        super(name, description, price, vat, category);
+    public Smartphone(String name, String description, BigDecimal price, BigDecimal vat, String memory) throws IllegalArgumentException {
+        super(name, description, price, vat);
         this.codeImei = generateCode();
         this.memory = memory;
     }
@@ -27,6 +27,10 @@ public class Smartphone extends Product {
         this.memory = memory;
     }
 
+    public int getCodeImei() {
+        return codeImei;
+    }
+
     //METODI
 
     private int generateCode() {
@@ -35,4 +39,9 @@ public class Smartphone extends Product {
     }
 
 
+
+    @Override
+    public String toString() {
+        return super.toString() + " Memory: " + getMemory() + " IMEI: " + getCodeImei();
+    }
 }

@@ -9,8 +9,8 @@ public class Television extends Product{
 
     // COSTRUTTORI
 
-    public Television(String name, String description, BigDecimal price, BigDecimal vat, Category category, int size, boolean smart) throws IllegalArgumentException {
-        super(name, description, price, vat, category);
+    public Television(String name, String description, BigDecimal price, BigDecimal vat, int size, boolean smart) throws IllegalArgumentException {
+        super(name, description, price, vat);
         this.size = size;
         this.smart = smart;
     }
@@ -35,4 +35,10 @@ public class Television extends Product{
     }
 
     //METODI
+
+
+    @Override
+    public String toString() {
+        return super.toString() + " Size: " + getSize() + " Smart: " + isSmart();
+    }
 }

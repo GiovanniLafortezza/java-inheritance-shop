@@ -4,8 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dba33c30-c9a5-4a4f-8676-227939dcd6c4" name="Changes" comment="create class Television">
+    <list default="true" id="dba33c30-c9a5-4a4f-8676-227939dcd6c4" name="Changes" comment="create class Headphones">
+      <change afterPath="$PROJECT_DIR$/src/org/java/inheritance/shop/Shopping.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/java/inheritance/shop/Category.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/org/java/inheritance/shop/Headphones.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/java/inheritance/shop/Headphones.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/java/inheritance/shop/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/java/inheritance/shop/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/java/inheritance/shop/Smartphone.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/java/inheritance/shop/Smartphone.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/java/inheritance/shop/Television.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/java/inheritance/shop/Television.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,13 +79,22 @@
       <option name="project" value="LOCAL" />
       <updated>1702303318022</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="create class Headphones">
+      <option name="closed" value="true" />
+      <created>1702303703626</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1702303703626</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="start project" />
     <MESSAGE value="create class Smartphone" />
     <MESSAGE value="create class Television" />
-    <option name="LAST_COMMIT_MESSAGE" value="create class Television" />
+    <MESSAGE value="create class Headphones" />
+    <option name="LAST_COMMIT_MESSAGE" value="create class Headphones" />
   </component>
 </project>

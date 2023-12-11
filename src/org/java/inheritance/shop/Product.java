@@ -10,13 +10,13 @@ public class Product {
     private String description;
     private BigDecimal price; // non deve essere negativo
     private BigDecimal vat; // non deve essere negativo
-    private Category category;
+
 
     // COSTRUTTORI
     public Product(){
         this.code = generateCode();
     }
-    public Product(String name, String description, BigDecimal price, BigDecimal vat, Category category) throws IllegalArgumentException{
+    public Product(String name, String description, BigDecimal price, BigDecimal vat) throws IllegalArgumentException{
         // prima faccio tutte le validazioni
         validateName(name);
         validatePrice(price);
@@ -27,7 +27,6 @@ public class Product {
         this.description = description;
         this.price = price;
         this.vat = vat;
-        this.category = category;
     }
 
 
@@ -72,13 +71,6 @@ public class Product {
         this.vat = vat;
     }
 
-    public Category getCategory() {
-        return category;
-    }
-
-    public void setCategory(Category category) {
-        this.category = category;
-    }
 
     //METODI
 
@@ -122,7 +114,7 @@ public class Product {
     // facciamo il toString che mi restituisce nome completo + prezzo in euro + categoria
     @Override
     public String toString(){
-        return getFullName() + ": " + getFullPrice() + "€ ("+ category.getName() +")";
+        return getFullName() + ": " + getFullPrice() + "€";
     }
 
 

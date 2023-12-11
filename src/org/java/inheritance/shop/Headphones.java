@@ -7,8 +7,8 @@ public class Headphones extends Product{
     private String choice;
 
     // COSTRUTTORI
-    public Headphones(String name, String description, BigDecimal price, BigDecimal vat, Category category, String color, String choice) throws IllegalArgumentException {
-        super(name, description, price, vat, category);
+    public Headphones(String name, String description, BigDecimal price, BigDecimal vat, String color, String choice) throws IllegalArgumentException {
+        super(name, description, price, vat );
         this.color = color;
         this.choice = choice;
     }
@@ -30,5 +30,13 @@ public class Headphones extends Product{
 
     public void setChoice(String choice) {
         this.choice = choice;
+    }
+
+    // METODI
+
+
+    @Override
+    public String toString() {
+        return super.toString() + " Color: " + getColor() + " " + getChoice();
     }
 }
