@@ -10,6 +10,7 @@ public class Headphones extends Product{
     public Headphones(String name, String description, BigDecimal price, BigDecimal vat, String color, String choice) throws IllegalArgumentException {
         super(name, description, price, vat );
         this.color = color;
+        validateChoice(choice);
         this.choice = choice;
     }
 
@@ -28,11 +29,18 @@ public class Headphones extends Product{
         return choice;
     }
 
-    public void setChoice(String choice) {
+    public void setChoice(String choice) throws IllegalArgumentException{
+        validateChoice(choice);
         this.choice = choice;
     }
 
     // METODI
+
+    private void validateChoice(String choice) throws IllegalArgumentException{
+        if (choice.isBlank() || (!choice.equalsIgnoreCase("wireless") && !choice.equalsIgnoreCase("wired"))){
+            throw new IllegalArgumentException("Choice not valid");
+        }
+    }
 
 
     @Override

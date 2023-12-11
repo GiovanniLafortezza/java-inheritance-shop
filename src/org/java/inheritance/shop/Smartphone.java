@@ -13,6 +13,7 @@ public class Smartphone extends Product {
 
     public Smartphone(String name, String description, BigDecimal price, BigDecimal vat, String memory) throws IllegalArgumentException {
         super(name, description, price, vat);
+        validateMemory(memory);
         this.codeImei = generateCode();
         this.memory = memory;
     }
@@ -23,7 +24,8 @@ public class Smartphone extends Product {
         return memory;
     }
 
-    public void setMemory(String memory) {
+    public void setMemory(String memory) throws IllegalArgumentException{
+        validateMemory(memory);
         this.memory = memory;
     }
 
@@ -38,7 +40,11 @@ public class Smartphone extends Product {
         return generateCode.nextInt(10000000);
     }
 
-
+    private void validateMemory(String memory) throws IllegalArgumentException{
+        if(memory.isBlank() || (!memory.equals("16") && !memory.equals("32"))){
+            throw new IllegalArgumentException("Memory not valid");
+        }
+    }
 
     @Override
     public String toString() {

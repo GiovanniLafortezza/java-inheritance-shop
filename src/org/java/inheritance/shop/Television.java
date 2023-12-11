@@ -11,6 +11,7 @@ public class Television extends Product{
 
     public Television(String name, String description, BigDecimal price, BigDecimal vat, int size, boolean smart) throws IllegalArgumentException {
         super(name, description, price, vat);
+        validateSize(size);
         this.size = size;
         this.smart = smart;
     }
@@ -22,7 +23,8 @@ public class Television extends Product{
         return size;
     }
 
-    public void setSize(int size) {
+    public void setSize(int size) throws IllegalArgumentException{
+        validateSize(size);
         this.size = size;
     }
 
@@ -35,6 +37,12 @@ public class Television extends Product{
     }
 
     //METODI
+
+    private void validateSize(int size) throws IllegalArgumentException{
+        if(size < 0) {
+            throw new IllegalArgumentException(" Size not valid");
+        }
+    }
 
 
     @Override
